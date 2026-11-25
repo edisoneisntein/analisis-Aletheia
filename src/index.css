@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-navy-950: #060E1B;
+  --color-navy-900: #0A1628;
+  --color-navy-800: #132542;
+  --color-navy-700: #1E355A;
+  --color-silver-100: #EFF2F6;
+  --color-silver-200: #DCE2EA;
+  --color-silver-300: #BFC8D6;
+  --color-silver-500: #5E6B7E;
+  --color-champagne-300: #DFC79A;
+  --color-champagne-400: #C5A66E;
+  --color-champagne-500: #9E7E45;
+  --color-champagne-600: #7D6232;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    color: #0A1628;
+    background-color: #F7F8FA;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  button, a, select, input, textarea {
+    outline-color: #9E7E45;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

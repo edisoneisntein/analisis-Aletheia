@@ -1,0 +1,6 @@
+{
+  "name": "ALETHEIA — Inteligencia Audiovisual y Producción Cinematográfica",
+  "description": "Sistema multidisciplinario de inteligencia audiovisual jurídica, ingeniería inversa, desarrollo creativo, guion técnico, storyboard y Master Prompts para ALETHEIA Consultores S.A.S. (Armenia, Quindío, Colombia).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
